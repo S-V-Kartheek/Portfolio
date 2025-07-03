@@ -4,6 +4,7 @@ A modern, animated 3D developer portfolio built with React, Vite, TailwindCSS, a
 
 ![Portfolio Interface](public/assets/projects/portfolio-interface.jpg)
 
+My portfolio is now live at: https://portfolio-eight-lovat-85.vercel.app/
 ---
 
 ## 📚 Table of Contents
