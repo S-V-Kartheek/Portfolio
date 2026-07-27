@@ -207,25 +207,34 @@ export const mySocials = [
 
 export const experiences = [
   {
-    title: "Bachelor of Technology (B.Tech.) in Computer Science and Engineering",
-    job: "SRM Institute of Science and Technology, Amaravati, India",
-    date: "2023 – 2027",
+    title: "Software Engineer Intern",
+    job: "Infosys Springboard",
+    date: "Aug. 2025 - Oct. 2025",
     contents: [
-      "Pursuing B.Tech. in Computer Science and Engineering at SRM University, Amaravati.",
-      "Core coursework: Data Structures & Algorithms, Operating Systems, Database Management Systems, Computer Networks, Artificial Intelligence, and Machine Learning.",
-      "Actively involved in coding competitions, hackathons, and technical clubs to enhance practical and teamwork skills.",
-      "Developed strong foundations in programming (C, C++, Python, Java, JavaScript) and problem-solving."
+      "Built and deployed a full-stack document processing platform via REST APIs, ingesting PDF, DOC, and image files through pipelines.",
+      "Served real-time querying and unit tested all pipeline stages before production deployment.",
+      "Implemented a semantic retrieval and Q&A system with embedding-based search and LLM-powered responses.",
+      "Achieved 85% answer relevance on production queries across a multi-tenant document corpus.",
     ],
   },
   {
-    title: "Research Intern (GenAI Powered Legal Assistance with Dual LLM Architecture,)",
-    job: "SRM Institute of Science and Technology, Amaravati, India",
-    date: "2024 – Present",
+    title: "Research Intern",
+    job: "SRM University AP",
+    date: "Jun. 2025 - Aug. 2025",
     contents: [
-      "Designed and implementing a novel dual Large Language Model (LLM) architecture** for improved contextual understanding and nuanced responses to complex legal queries, leveraging advanced Generative AI and Natural Language Processing (NLP) techniques.",
-      "Utilized key technologies and tools** such as Python, TensorFlow/PyTorch, Hugging Face Transformers, cloud services like Google Cloud AI."
+      "Developed a full-stack legal document analysis platform with a React frontend and modular REST APIs.",
+      "Orchestrated a service-oriented backend for document parsing, jurisdiction routing, and Q&A.",
     ],
-  }
+  },
+  {
+    title: "Undergraduate Researcher",
+    job: "IIIT Gwalior",
+    date: "Present",
+    contents: [
+      "Developing a multimodal graph-based recommendation system with GCN, VGAE, and cross-attention hybrid filtering.",
+      "Outperforming state-of-the-art models in personalised ranking benchmarks.",
+    ],
+  },
 ];
 export const reviews = [
   {
