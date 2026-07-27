@@ -1,5 +1,74 @@
 export const myProjects = [
   {
+    id: 11,
+    title: "RepoTalk",
+    description:
+      "Engineered a full-stack Q&A platform over any GitHub codebase with SSE token streaming, persistent chat history, rate-limiting, and OAuth authentication.",
+    subDescription: [
+      "Built an AST-aware code retrieval pipeline using Tree-sitter chunking and hybrid vector search.",
+      "Added automated scoring for answer faithfulness, relevancy, and context precision in production.",
+      "Tech stack: React.js, Node.js, FastAPI, Python, Qdrant, PostgreSQL, Redis.",
+    ],
+    href: "https://github.com/S-V-Kartheek/repochat-ai",
+    logo: "",
+    image: "/assets/projects/portfolio-interface.jpg",
+    tags: [
+      { id: 1, name: "React", path: "/assets/logos/react.svg" },
+      { id: 2, name: "Node.js", path: "/assets/logos/nodejs.svg" },
+      { id: 3, name: "FastAPI", path: "" },
+      { id: 4, name: "Python", path: "/assets/logos/python.svg" },
+      { id: 5, name: "Qdrant", path: "" },
+      { id: 6, name: "PostgreSQL", path: "" },
+      { id: 7, name: "Redis", path: "" },
+    ],
+  },
+  {
+    id: 12,
+    title: "SmartCRM Platform",
+    description:
+      "Designed and implemented a CRM platform with customer/order APIs, CSV ingestion, audience segmentation, campaign analytics, and AI-assisted campaign drafting.",
+    subDescription: [
+      "Built REST API routes for customer and order CRUD with bulk CSV ingestion and row-level validation.",
+      "Implemented rule-based audience segmentation and AI-assisted campaign drafting.",
+      "Built analytics dashboards with funnel metrics and AI retrospectives, deployed using Docker Compose on Vercel and Render.",
+    ],
+    href: "https://github.com/S-V-Kartheek/xeno-crm-platform",
+    logo: "",
+    image: "/assets/projects/accessories.jpg",
+    tags: [
+      { id: 1, name: "TypeScript", path: "" },
+      { id: 2, name: "Node.js", path: "/assets/logos/nodejs.svg" },
+      { id: 3, name: "Next.js", path: "" },
+      { id: 4, name: "React", path: "/assets/logos/react.svg" },
+      { id: 5, name: "PostgreSQL", path: "" },
+      { id: 6, name: "Prisma", path: "" },
+      { id: 7, name: "Docker", path: "/assets/logos/docker.svg" },
+    ],
+  },
+  {
+    id: 13,
+    title: "AI Legal Assistance Platform",
+    description:
+      "Architected a service-oriented legal assistance platform with 8 deployed microservices and a shared React + TypeScript frontend.",
+    subDescription: [
+      "Built microservices for Law Bot, Chat, Police Portal, Auth, Multilingual, Therapy, Stego, and AI Avatar.",
+      "Implemented real-time WebSocket chat with reactions, typing indicators, and online tracking.",
+      "Created Citizen/Police FIR dashboards with complaint analytics and responsive UI, cutting manual legal review time by 50%.",
+    ],
+    href: "https://github.com/S-V-Kartheek/AI-Powered-Legal-Assistance-Tool-Dual-LLM-Architecture-for-Central-State-Laws",
+    logo: "",
+    image: "/assets/projects/auth-system.jpg",
+    tags: [
+      { id: 1, name: "React", path: "/assets/logos/react.svg" },
+      { id: 2, name: "Node.js", path: "/assets/logos/nodejs.svg" },
+      { id: 3, name: "Express.js", path: "" },
+      { id: 4, name: "FastAPI", path: "" },
+      { id: 5, name: "Socket.io", path: "/assets/logos/socketio.svg" },
+      { id: 6, name: "TypeScript", path: "" },
+      { id: 7, name: "CSS", path: "/assets/logos/css3.svg" },
+    ],
+  },
+  {
     id: 1001,
     title: "Her Haven - Women's Health and Safety Platform",
     description:
