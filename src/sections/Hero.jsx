@@ -11,7 +11,10 @@ import Loader from "../components/Loader";
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 853 });
   return (
-    <section className="relative flex flex-col-reverse md:flex-row items-center justify-between min-h-screen overflow-hidden c-space">
+    <section
+      id="home"
+      className="relative flex flex-col-reverse md:flex-row items-center justify-between min-h-screen overflow-hidden c-space"
+    >
       <HeroText />
       <div className="relative w-full md:w-1/2 h-[400px] md:h-[600px] flex items-center justify-center">
         <Canvas camera={{ position: [0, 1, 3] }}>
