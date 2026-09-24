@@ -1,12 +1,35 @@
 export const myProjects = [
   {
-    id: 11,
-    title: "RepoTalk",
+    id: 16,
+    title: "Lenny Growth Assistant",
     description:
-      "Engineered a full-stack Q&A platform over any GitHub codebase with SSE token streaming, persistent chat history, rate-limiting, and OAuth authentication.",
+      "A RAG chat assistant with hybrid lexical + vector search over Lenny's Podcast transcripts, tuned to a confidence threshold that hit 100% recall@6 and eliminated hallucinated answers by refusing low-confidence queries.",
     subDescription: [
-      "Built an AST-aware code retrieval pipeline using Tree-sitter chunking and hybrid vector search.",
-      "Added automated scoring for answer faithfulness, relevancy, and context precision in production.",
+      "Engineered hybrid retrieval (pgvector + Reciprocal Rank Fusion) across 40+ indexed episodes and 4.4k searchable, citation-linked passages.",
+      "Diagnosed and fixed a production outage in the semantic search pipeline caused by a deprecated embedding model, then built retry/backoff, quota-aware batching, and automatic multi-provider LLM failover for resilience against third-party API instability.",
+      "Hardened AI-generated content against XSS using allow-list HTML sanitization, strict CSP, and sandboxed rendering, validated by 129 adversarial security tests.",
+      "Tech stack: React, TypeScript, FastAPI, PostgreSQL/pgvector, Multi-LLM (Gemini/Anthropic/Grok).",
+    ],
+    href: "https://github.com/S-V-Kartheek/Lenny-Growth-Assistant",
+    logo: "",
+    image: "/assets/projects/lenny-growth-assistant.png",
+    tags: [
+      { id: 1, name: "React", path: "/assets/logos/react.svg" },
+      { id: 2, name: "TypeScript", path: "" },
+      { id: 3, name: "FastAPI", path: "" },
+      { id: 4, name: "PostgreSQL", path: "" },
+      { id: 5, name: "pgvector", path: "" },
+    ],
+  },
+  {
+    id: 11,
+    title: "RepoTalk: Codebase Q&A Agent",
+    description:
+      "An agentic Q&A system that autonomously selects retrieval tools, validates context, and iterates on answers using ReAct-style reasoning over any GitHub codebase.",
+    subDescription: [
+      "Grounded responses in AST-aware retrieval (Tree-sitter chunking) and hybrid vector search so answers stay accurate to the actual code.",
+      "Built the evaluation harness alongside the product: an automated scorer measuring answer faithfulness, relevancy, and context precision.",
+      "Productionized with SSE token streaming, persistent multi-session chat history, Redis-backed rate-limiting, and OAuth-based authentication.",
       "Tech stack: React.js, Node.js, FastAPI, Python, Qdrant, PostgreSQL, Redis.",
     ],
     href: "https://github.com/S-V-Kartheek/repochat-ai",
@@ -23,14 +46,57 @@ export const myProjects = [
     ],
   },
   {
+    id: 14,
+    title: "Explainable Fraud Detection Engine",
+    description:
+      "An agentic fraud investigation pipeline where an LLM autonomously generates SHAP-grounded explanation reports via RAG tool calls, achieving 0.92 ROC-AUC & 95% recall across 6.36M+ transactions.",
+    subDescription: [
+      "Built a risk-scoring model (LightGBM) with SHAP-based explanations so analysts could trust and act on every flagged case, scoring transactions in real time.",
+      "Delivered a full analyst workflow — batch CSV scanning, a risk simulator, model benchmarking, and executive dashboards — turning model output into decisions non-technical stakeholders could act on.",
+      "Tech stack: FastAPI, React.js, Python, LightGBM, ChromaDB.",
+    ],
+    href: "https://github.com/S-V-Kartheek",
+    logo: "",
+    image: "/assets/projects/game-engine.jpg",
+    tags: [
+      { id: 1, name: "FastAPI", path: "" },
+      { id: 2, name: "React", path: "/assets/logos/react.svg" },
+      { id: 3, name: "Python", path: "/assets/logos/python.svg" },
+      { id: 4, name: "LightGBM", path: "" },
+      { id: 5, name: "ChromaDB", path: "" },
+    ],
+  },
+  {
+    id: 15,
+    title: "AI Sales Agent",
+    description:
+      "An autonomous conversational agent (LLaMA-3.1 + RAG over Pinecone) that independently handles real-time Q&A and books demos over WebSocket.",
+    subDescription: [
+      "Grounded every reply in an indexed knowledge base so answers stay accurate instead of hallucinated.",
+      "Designed a node-based conversation flow (welcome → qualify → Q&A → scheduling) with typed session state and persistent context across long, multi-turn conversations.",
+      "Added structured logging, Zod validation, and CRM persistence via MongoDB for production reliability.",
+      "Tech stack: Node.js, TypeScript, Express, WebSockets, LLaMA-3.1, RAG, Pinecone, MongoDB.",
+    ],
+    href: "https://github.com/S-V-Kartheek",
+    logo: "",
+    image: "/assets/projects/elearning.jpg",
+    tags: [
+      { id: 1, name: "Node.js", path: "/assets/logos/nodejs.svg" },
+      { id: 2, name: "TypeScript", path: "" },
+      { id: 3, name: "Express.js", path: "" },
+      { id: 4, name: "LLaMA-3.1", path: "" },
+      { id: 5, name: "Pinecone", path: "" },
+    ],
+  },
+  {
     id: 12,
     title: "SmartCRM Platform",
     description:
-      "Designed and implemented a CRM platform with customer/order APIs, CSV ingestion, audience segmentation, campaign analytics, and AI-assisted campaign drafting.",
+      "A CRM built end to end — bulk CSV ingestion with row-level validation, rule-based audience segmentation, and AI-assisted campaign drafting.",
     subDescription: [
       "Built REST API routes for customer and order CRUD with bulk CSV ingestion and row-level validation.",
       "Implemented rule-based audience segmentation and AI-assisted campaign drafting.",
-      "Built analytics dashboards with funnel metrics and AI retrospectives, deployed using Docker Compose on Vercel and Render.",
+      "Owned the full SDLC solo, from schema/ERD design to live deployment on Vercel and Render, with campaign analytics dashboards tracking funnel metrics end-to-end via Docker Compose.",
     ],
     href: "https://github.com/S-V-Kartheek/xeno-crm-platform",
     logo: "",
@@ -200,39 +266,43 @@ export const mySocials = [
   },
   {
     name: "LinkedIn",
-    href: "www.linkedin.com/in/kartheek-sanka",
+    href: "https://www.linkedin.com/in/kartheek-sanka",
     icon: "/assets/socials/linkedIn.svg",
-  }
+  },
+  {
+    name: "GitHub",
+    href: "https://github.com/S-V-Kartheek",
+    icon: "/assets/logos/github.svg",
+  },
 ];
 
 export const experiences = [
   {
-    title: "Software Engineer Intern",
-    job: "Infosys Springboard",
-    date: "Aug. 2025 - Oct. 2025",
+    title: "Full Stack Developer Intern",
+    job: "Evobi Automations Private Limited",
+    date: "Jun. 2026 - Present",
     contents: [
-      "Built and deployed a full-stack document processing platform via REST APIs, ingesting PDF, DOC, and image files through pipelines.",
-      "Served real-time querying and unit tested all pipeline stages before production deployment.",
-      "Implemented a semantic retrieval and Q&A system with embedding-based search and LLM-powered responses.",
-      "Achieved 85% answer relevance on production queries across a multi-tenant document corpus.",
-    ],
-  },
-  {
-    title: "Research Intern",
-    job: "SRM University AP",
-    date: "Jun. 2025 - Aug. 2025",
-    contents: [
-      "Developed a full-stack legal document analysis platform with a React frontend and modular REST APIs.",
-      "Orchestrated a service-oriented backend for document parsing, jurisdiction routing, and Q&A.",
+      "Scoped requirements directly with the mobile team and engineered an automated CI/CD pipeline for mobile app builds — new builds are tested and pushed to production with zero manual intervention, cutting release turnaround time.",
+      "Partnered with finance stakeholders to build an ERP portal integrated with Tally, automating data synchronization, invoice generation, and quotation creation to cut manual data entry and turnaround time.",
     ],
   },
   {
     title: "Undergraduate Researcher",
     job: "IIIT Gwalior",
-    date: "Present",
+    date: "Jan. 2026 - Jun. 2026",
     contents: [
-      "Developing a multimodal graph-based recommendation system with GCN, VGAE, and cross-attention hybrid filtering.",
-      "Outperforming state-of-the-art models in personalised ranking benchmarks.",
+      "Developed a multimodal graph-based recommendation system (GCN, VGAE, cross-attention hybrid filtering) with a professor-led research team.",
+      "Outperformed state-of-the-art baselines on personalized ranking benchmarks; resulting paper accepted at the FICTA 2026 International Conference.",
+    ],
+  },
+  {
+    title: "AI Engineer Intern",
+    job: "Infosys Springboard",
+    date: "Aug. 2025 - Oct. 2025",
+    contents: [
+      "Built and deployed a full-stack document processing platform via REST APIs, ingesting PDF, DOC, and image files through OCR, NLP & TTS pipelines, unit tested across all stages before production deployment.",
+      "Designed a citation-aware RAG pipeline with semantic chunking and embedding-based retrieval, achieving 85% answer relevance across a multi-tenant document corpus by having the system validate the accuracy of its own context before responding.",
+      "Presented progress in weekly mentor demo reviews and re-scoped deliverables mid-sprint based on feedback.",
     ],
   },
 ];

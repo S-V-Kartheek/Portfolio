@@ -19,7 +19,7 @@ const About = () => {
           <div className="z-10">
             <p className="headtext">Hi, I'm Venkata Kartheek</p>
             <p className="subtext">
-              I'm a developer pursuing B.Tech in Computer Science and Engineering (2023–2027) at SRM Institute of Science and Technology, Amaravati, India. I love building solutions in machine learning, web development, and automation.
+              Final-year CS undergraduate who builds AI-native products end to end — LLM agents, RAG pipelines, and the evaluation loops that tell you whether they actually work — across React/Next.js, Node.js/FastAPI, and SQL/NoSQL. Comfortable shipping fast in problem spaces that don't have a settled answer yet.
             </p>
           </div>
           <div className="absolute inset-x-0 pointer-evets-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />
@@ -80,7 +80,7 @@ const About = () => {
           <div className="z-10 w-[50%]">
             <p className="headtext">Location</p>
             <p className="subtext">
-              Andhra Pradesh, India
+              Bengaluru, Karnataka, India
             </p>
           </div>
           <figure className="absolute left-[30%] top-[10%]">
@@ -101,12 +101,12 @@ const About = () => {
           <div className="z-10 w-[65%]">
             <p className="headText">Skills & Tech Stack</p>
             <p className="subtext">
-              <b>Programming:</b> C++, Java, Python, JavaScript, TypeScript<br/>
-              <b>Web Development:</b> HTML, CSS, JavaScript, React, Next.js, Tailwind CSS, Node.js, Express.js, MongoDB, MySQL, PostgreSQL, etc.<br/>
-              <b>Machine Learning:</b> TensorFlow, Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn, SciPy, etc.<br/>
-              <b>Cloud:</b> AWS, Azure<br/>
-              <b>Version Control:</b> Git, GitHub, GitLab, etc.<br/>
-              <b>Operating Systems:</b> Windows, Linux, macOS, etc.<br/>
+              <b>Languages:</b> JavaScript, TypeScript, Python, Java, SQL<br/>
+              <b>Frontend:</b> React.js, Next.js, Tailwind CSS<br/>
+              <b>Backend & Systems:</b> Node.js, Express.js, FastAPI, REST APIs, WebSockets, Microservices, CI/CD<br/>
+              <b>Databases:</b> PostgreSQL, MongoDB, Redis, Vector DBs (Qdrant, Pinecone, ChromaDB)<br/>
+              <b>AI/Agentic:</b> LLMs, RAG Pipelines, Agent Orchestration (LangChain, LangGraph), Prompt Engineering, Explainable ML (SHAP)<br/>
+              <b>Core CS:</b> Data Structures & Algorithms, Operating Systems, Computer Networks, OOP, DBMS<br/>
             </p>
           </div>
           <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[65%] md:scale-125">
@@ -117,8 +117,11 @@ const About = () => {
         <div className="grid-default-color col-span-1 md:col-span-6 mt-4">
           <p className="headtext">Achievements</p>
           <p className="subtext">
-            <b>Winner of HackVyuha 2k25</b> conducted by GeeksforGeeks for developing "Her Haven" - an Saas platform revolutionizing women's health and safety.<br/>
-            <b>Runner-up in the AI Hackathon</b> conducted by Andhra University for developing a Smart Farmer Assistance App
+            <b>Conference Paper</b> accepted at the FICTA 2026 International Conference for a multimodal graph-based recommendation system.<br/>
+            <b>Hackathon Team Lead</b> — led teams across 6 hackathons; Runner-up, Leap Hackathon (Government of India); Winner, GeeksForGeeks Hackathon "HackVyuha 2k25" (SRM University AP) for "Her Haven" — a SaaS platform for women's health and safety; Runner-up, AI Hackathon (Andhra University) for a Smart Farmer Assistance App.<br/>
+            <b>Oracle Certified Professional:</b> Java SE 17 Developer.<br/>
+            <b>IBM Full Stack Software Developer</b> Professional Certificate — Coursera.<br/>
+            <b>100 Days of Code:</b> The Complete Python Pro Bootcamp — Udemy.
           </p>
         </div>
       </div>
