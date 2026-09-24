@@ -32,7 +32,7 @@ const Project = ({
           className="flex items-center gap-1 cursor-pointer hover-animation"
         >
           Read More
-          <img src="assets/arrow-right.svg" className="w-5" />
+          <img src="assets/icons/arrow-right.svg" className="w-5" />
         </button>
       </div>
       {!isLast && (

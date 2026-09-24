@@ -305,6 +305,15 @@ export const experiences = [
       "Presented progress in weekly mentor demo reviews and re-scoped deliverables mid-sprint based on feedback.",
     ],
   },
+  {
+    title: "Research Intern",
+    job: "SRM University AP",
+    date: "Jun. 2025 - Aug. 2025",
+    contents: [
+      "Developed a full-stack legal document analysis platform with a React frontend and modular REST APIs.",
+      "Orchestrated a service-oriented backend for document parsing, jurisdiction routing, and Q&A.",
+    ],
+  },
 ];
 export const reviews = [
   {
